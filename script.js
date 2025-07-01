@@ -15,7 +15,7 @@ for (let i = 0; i < NbExample; i++) {
     let randomNb = Math.floor(Math.random() * 200)
     document.getElementById("img-js").innerHTML += 
             `
-            <div class="col-3 mb-5 m-auto">
+            <div class="col-lg-3 col-3-sm mb-5 mt-4">
             <a class="example-image-link" href="https://picsum.photos/id/${randomNb}/200/300"
                 data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                 <img class="example-image" src="https://picsum.photos/id/${randomNb}/200/300" alt="" />
