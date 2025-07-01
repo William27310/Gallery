@@ -1,4 +1,3 @@
-let NbExample = 10
 // console.log("NbExample")
 
 // for (let i = 0; i < NbExample; i++) {
@@ -10,10 +9,12 @@ let NbExample = 10
 //             </a>
 //             `
 // }
+function generateNbExample(NbExample) {
 
-for (let i = 0; i < NbExample; i++) {
-    let randomNb = Math.floor(Math.random() * 200)
-    document.getElementById("img-js").innerHTML += 
+    for (let i = 0; i < NbExample; i++) {
+        let randomNb = Math.floor(Math.random() * 200)
+
+        document.getElementById("img-js").innerHTML +=
             `
             <div class="col-lg-3 col-3-sm mb-5 mt-4">
             <a class="example-image-link" href="https://picsum.photos/id/${randomNb}/200/300"
@@ -22,4 +23,16 @@ for (let i = 0; i < NbExample; i++) {
             </a>
             </div>
             `
+    }
 }
+
+generateNbExample(50)
+
+document.addEventListener("scroll", () => {
+    console.log(window.scrollY)
+    console.log(window.innerHeight)
+    if (window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight) {
+        generateNbExample(50)
+    }
+})
