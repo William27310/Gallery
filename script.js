@@ -17,9 +17,9 @@ function generateNbExample(NbExample) {
         document.getElementById("img-js").innerHTML +=
             `
             <div class="col-lg-3 col-3-sm mb-5 mt-4">
-            <a class="example-image-link" href="https://picsum.photos/id/${randomNb}/200/300"
+            <a class="example-image-link" href="https://picsum.photos/id/${randomNb}/2000/1200"
                 data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img class="example-image" src="https://picsum.photos/id/${randomNb}/200/300" alt="" />
+                <img class="example-image" src="https://picsum.photos/id/${randomNb}/50/50" alt="" />
             </a>
             </div>
             `
